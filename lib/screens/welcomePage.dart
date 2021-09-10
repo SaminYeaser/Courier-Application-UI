@@ -1,5 +1,5 @@
-import 'package:courierui/components/loginCredential.dart';
-import 'package:courierui/components/welcome.dart';
+import 'package:courierui/components/welcomePageComponents/loginCredential.dart';
+import 'package:courierui/components/welcomePageComponents/welcome.dart';
 import 'package:courierui/constants.dart';
 
 import 'package:flutter/material.dart';
@@ -17,6 +17,7 @@ class WelcomePage extends StatelessWidget {
             child: Column(
               children: [
                 WelcomeSlider(),
+                SizedBox(height: 80,),
                 Login()
               ],
             ),
