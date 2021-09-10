@@ -24,35 +24,32 @@ class _CustomTextFieldState extends State<CustomTextField> {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.fromLTRB(20, 10,20, 0),
-      child: TextFormField(
-        keyboardType: TextInputType.number,
-        cursorColor: Theme.of(context).accentColor,
-        maxLength: 20,
-        decoration: InputDecoration(
-            icon: Icon(
-              Icons.calendar_today,
-              color: Colors.white,
-            ),
-            filled: true,
-            fillColor: Colors.white,
-            contentPadding: EdgeInsets.symmetric(horizontal: 20),
-            labelText: 'Enter Track Number',
-            labelStyle: TextStyle(
-              color: Colors.black,
-            ),
-            border: OutlineInputBorder(
-              borderSide: BorderSide(color: Colors.white),
-              borderRadius: BorderRadius.circular(12),
-            )
-            // enabledBorder: UnderlineInputBorder(
-            //   borderRadius: BorderRadius.circular(25),
-            //   borderSide: BorderSide(color: Colors.white),
-            // ),
-            ),
-        onTap: () => _selectDate(context),
-      ),
+    return TextFormField(
+      keyboardType: TextInputType.number,
+      cursorColor: Theme.of(context).accentColor,
+      maxLength: 20,
+      decoration: InputDecoration(
+          icon: Icon(
+            Icons.calendar_today,
+            color: Colors.white,
+          ),
+          filled: true,
+          fillColor: Colors.white,
+          contentPadding: EdgeInsets.symmetric(horizontal: 20),
+          labelText: 'Enter Track Number',
+          labelStyle: TextStyle(
+            color: Colors.black,
+          ),
+          border: OutlineInputBorder(
+            borderSide: BorderSide(color: Colors.white),
+            borderRadius: BorderRadius.circular(12),
+          )
+          // enabledBorder: UnderlineInputBorder(
+          //   borderRadius: BorderRadius.circular(25),
+          //   borderSide: BorderSide(color: Colors.white),
+          // ),
+          ),
+      onTap: () => _selectDate(context),
     );
   }
 }

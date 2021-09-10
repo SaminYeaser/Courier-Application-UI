@@ -1,3 +1,4 @@
+import 'package:courierui/components/homePageComponents/textFieldCustom.dart';
 import 'package:flutter/material.dart';
 
 class HeaderBottom extends StatefulWidget {
@@ -38,7 +39,8 @@ class _HeaderBottomState extends State<HeaderBottom> {
                 wordSpacing: 2,
                 letterSpacing: 2),
           ),
-          SizedBox(height: 20,),
+          SizedBox(height: 40,),
+          CustomTextField()
         ],
       ),
     );

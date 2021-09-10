@@ -31,7 +31,7 @@ class Home extends StatelessWidget {
                       SizedBox(height: 20,),
                       HeaderBottom(),
                       SizedBox(height: 20,),
-                      CustomTextField()
+
                     ],
                   ),
                 ),
