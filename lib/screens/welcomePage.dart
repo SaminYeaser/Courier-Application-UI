@@ -17,8 +17,10 @@ class WelcomePage extends StatelessWidget {
             child: Column(
               children: [
                 WelcomeSlider(),
-                SizedBox(height: 80,),
-                Login()
+                SizedBox(
+                  height: 80,
+                ),
+                Login(),
               ],
             ),
           ),

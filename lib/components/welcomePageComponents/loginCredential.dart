@@ -8,7 +8,7 @@ class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 300,
+      height: 310,
       width: double.infinity,
       child: Column(
         children: [
@@ -20,8 +20,19 @@ class Login extends StatelessWidget {
           SizedBox(height: 30,),
           CustomButton(
             image: 'assets/images/fb.png',
-            text: 'Sign With Google',
+            text: 'Sign With Facebook',
             color: Colors.blueAccent,
+          ),
+          SizedBox(height: 20,),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text('Don\'t have account?'),
+              Text(
+                'Sign Up!',
+                style: TextStyle(color: Colors.orange),
+              ),
+            ],
           ),
         ],
       ),
