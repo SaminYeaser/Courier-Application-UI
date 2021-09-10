@@ -1,5 +1,6 @@
 import 'package:courierui/components/homePageComponents/bottomHeader.dart';
 import 'package:courierui/components/homePageComponents/header.dart';
+import 'package:courierui/components/homePageComponents/movingCarousel.dart';
 import 'package:courierui/components/homePageComponents/textFieldCustom.dart';
 import 'package:courierui/constants.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +13,7 @@ class Home extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Container(
-          color: lightPurple,
+          color: Colors.white,
           child: Column(
             children: [
               Expanded(
@@ -28,17 +29,42 @@ class Home extends StatelessWidget {
                   child: Column(
                     children: [
                       Header(),
-                      SizedBox(height: 20,),
+                      SizedBox(
+                        height: 20,
+                      ),
                       HeaderBottom(),
-                      SizedBox(height: 20,),
-
+                      SizedBox(
+                        height: 20,
+                      ),
                     ],
                   ),
                 ),
               ),
               Expanded(
                 flex: 2,
-                child: Container(),
+                child: Padding(
+                  padding: EdgeInsets.fromLTRB(20, 20, 20, 0),
+                  child: Container(
+                    child: Column(
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              'My Services',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20,
+                                  fontFamily: 'Glory'),
+                            ),
+                            Text('View All',style: TextStyle(color: Colors.orange,fontSize: 15),)
+                          ],
+                        ),
+                        CardSlider()
+                      ],
+                    ),
+                  ),
+                ),
               )
             ],
           ),

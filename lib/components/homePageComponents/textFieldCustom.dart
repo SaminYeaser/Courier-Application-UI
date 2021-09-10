@@ -29,26 +29,22 @@ class _CustomTextFieldState extends State<CustomTextField> {
       cursorColor: Theme.of(context).accentColor,
       maxLength: 20,
       decoration: InputDecoration(
-          icon: Icon(
-            Icons.calendar_today,
-            color: Colors.white,
-          ),
-          filled: true,
-          fillColor: Colors.white,
-          contentPadding: EdgeInsets.symmetric(horizontal: 20),
-          labelText: 'Enter Track Number',
-          labelStyle: TextStyle(
-            color: Colors.black,
-          ),
-          border: OutlineInputBorder(
-            borderSide: BorderSide(color: Colors.white),
-            borderRadius: BorderRadius.circular(12),
-          )
-          // enabledBorder: UnderlineInputBorder(
-          //   borderRadius: BorderRadius.circular(25),
-          //   borderSide: BorderSide(color: Colors.white),
-          // ),
-          ),
+        icon: Icon(
+          Icons.calendar_today,
+          color: Colors.white,
+        ),
+        filled: true,
+        fillColor: Colors.white,
+        contentPadding: EdgeInsets.symmetric(horizontal: 20),
+        labelText: 'Enter Track Number',
+        labelStyle: TextStyle(
+          color: Colors.black,
+        ),
+        border: OutlineInputBorder(
+          borderSide: BorderSide(color: Colors.white),
+          borderRadius: BorderRadius.circular(12),
+        ),
+      ),
       onTap: () => _selectDate(context),
     );
   }
