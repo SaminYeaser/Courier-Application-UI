@@ -2,6 +2,7 @@ import 'package:courierui/screens/home.dart';
 import 'package:courierui/screens/map.dart';
 import 'package:courierui/screens/notificationScreen.dart';
 import 'package:courierui/screens/profileSection.dart';
+import 'package:courierui/screens/welcomePage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
@@ -93,12 +94,17 @@ List<Widget> allListi = [
   //   ),
   //   name: 'Setting',
   // ),
-  // CustomMenuList(
-  //   icon: IconButton(
-  //     icon: Icon(Icons.help),
-  //     onPressed: () {},
-  //     color: Colors.white,
-  //   ),
-  //   name: 'Help & Support',
-  // ),
+  CustomMenuList(
+    icon: IconButton(
+      icon: Icon(Icons.logout),
+      onPressed: () {
+        Get.to(WelcomePage());
+      },
+      color: Colors.white,
+    ),
+    name: 'Help & Support',
+    ontap: () {
+      Get.to(WelcomePage());
+    },
+  ),
 ];
