@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 class CustomCardHome extends StatelessWidget {
   final String? title;
   final String? text;
+
   const CustomCardHome({Key? key, this.title, this.text}) : super(key: key);
 
   @override
@@ -11,9 +12,7 @@ class CustomCardHome extends StatelessWidget {
     return Container(
       width: 200,
       child: Card(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20)
-        ),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
         elevation: 5,
         color: lightPurple,
         child: Padding(
@@ -30,10 +29,21 @@ class CustomCardHome extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 20,),
-              Text(title!,style: TextStyle(fontWeight: FontWeight.bold,fontFamily: 'Glory'),),
-              SizedBox(height: 20,),
-              Text(text!,style:TextStyle(fontFamily: 'Glory'),)
+              SizedBox(
+                height: 20,
+              ),
+              Text(
+                title!,
+                style:
+                    TextStyle(fontWeight: FontWeight.bold, fontFamily: 'Glory'),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Text(
+                text!,
+                style: TextStyle(fontFamily: 'Glory'),
+              )
             ],
           ),
         ),

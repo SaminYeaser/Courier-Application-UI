@@ -2,7 +2,6 @@ import 'package:courierui/components/homePageComponents/customCardHome.dart';
 
 import 'package:flutter/material.dart';
 
-
 class CardSlider extends StatefulWidget {
   const CardSlider({Key? key}) : super(key: key);
 
@@ -11,7 +10,6 @@ class CardSlider extends StatefulWidget {
 }
 
 class _CardSliderState extends State<CardSlider> {
-
   List<Widget> listWidget = [
     CustomCardHome(
       title: 'Courier',

@@ -39,7 +39,9 @@ class _HeaderBottomState extends State<HeaderBottom> {
                 wordSpacing: 2,
                 letterSpacing: 2),
           ),
-          SizedBox(height: 100,),
+          SizedBox(
+            height: 100,
+          ),
           CustomTextField()
         ],
       ),

@@ -59,8 +59,8 @@ class _WelcomeSliderState extends State<WelcomeSlider> {
                 decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     color: (Theme.of(context).brightness == Brightness.dark
-                        ? Colors.white
-                        : Colors.deepPurple)
+                            ? Colors.white
+                            : Colors.deepPurple)
                         .withOpacity(_current == entry.key ? 0.9 : 0.4)),
               ),
             );

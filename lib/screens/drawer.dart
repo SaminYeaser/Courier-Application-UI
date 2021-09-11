@@ -1,9 +1,6 @@
-
-
 import 'package:courierui/components/drawerComponent/drawerList.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 
 class CustomDrawer extends StatefulWidget {
   const CustomDrawer({
@@ -17,7 +14,7 @@ class CustomDrawer extends StatefulWidget {
 class _CustomDrawerState extends State<CustomDrawer> {
   @override
   Widget build(BuildContext context) {
-    return  SafeArea(
+    return SafeArea(
       child: Container(
         width: 200,
         color: Colors.deepPurple,
@@ -45,8 +42,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
               height: 20,
             ),
             Expanded(
-              child:
-              ListView.builder(
+              child: ListView.builder(
                 itemCount: allListi.length,
                 itemBuilder: (context, index) => allListi[index],
               ),

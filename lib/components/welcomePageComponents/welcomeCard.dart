@@ -24,10 +24,15 @@ class WelcomeCard extends StatelessWidget {
           Center(
             child: Text(
               title!,
-              style: TextStyle(fontSize: 30, fontFamily: 'Glory',fontWeight: FontWeight.bold),
+              style: TextStyle(
+                  fontSize: 30,
+                  fontFamily: 'Glory',
+                  fontWeight: FontWeight.bold),
             ),
           ),
-          SizedBox(height: 20,),
+          SizedBox(
+            height: 20,
+          ),
           Center(
             child: Text(
               text!,

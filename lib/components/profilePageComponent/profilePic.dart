@@ -18,24 +18,25 @@ class ProfileAvatar extends StatelessWidget {
                   width: 70,
                   height: 70,
                 ),
-              ),),
-            ),
-          Positioned(
-            top: 42,
-            left: 35,
-            child: Container(
-              height: 20,
-              padding: EdgeInsets.all(10),
-              // decoration: BoxDecoration(
-              //   color: Colors.green,
-              //   shape: BoxShape.circle,
-              // ),
-              child: Icon(
-                Icons.settings,
-                color: Colors.blueAccent,
-                size: 25,
               ),
-            )),
+            ),
+          ),
+          Positioned(
+              top: 42,
+              left: 35,
+              child: Container(
+                height: 20,
+                padding: EdgeInsets.all(10),
+                // decoration: BoxDecoration(
+                //   color: Colors.green,
+                //   shape: BoxShape.circle,
+                // ),
+                child: Icon(
+                  Icons.settings,
+                  color: Colors.blueAccent,
+                  size: 25,
+                ),
+              )),
         ],
       ),
     );

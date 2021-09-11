@@ -18,16 +18,24 @@ class Login extends StatelessWidget {
             image: 'assets/images/google.png',
             text: 'Sign With Google',
             color: Colors.white,
-            ontap: (){ Get.to(Home());},
+            ontap: () {
+              Get.to(Home());
+            },
           ),
-          SizedBox(height: 30,),
+          SizedBox(
+            height: 30,
+          ),
           CustomButton(
             image: 'assets/images/fb.png',
             text: 'Sign With Facebook',
             color: Colors.blueAccent,
-            ontap: (){ Get.to(Home());},
+            ontap: () {
+              Get.to(Home());
+            },
           ),
-          SizedBox(height: 20,),
+          SizedBox(
+            height: 20,
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [

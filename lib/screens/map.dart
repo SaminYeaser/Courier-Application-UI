@@ -13,7 +13,6 @@ class MapSection extends StatefulWidget {
 }
 
 class _MapSectionState extends State<MapSection> {
-
   GlobalKey<ScaffoldState> _scafoldKey = GlobalKey<ScaffoldState>();
 
   List<latLng.LatLng> points = [
@@ -52,10 +51,10 @@ class _MapSectionState extends State<MapSection> {
                 layers: [
                   TileLayerOptions(
                       urlTemplate:
-                      "https://api.mapbox.com/styles/v1/defendercharli/cktffl7uu38j017p7cxqz769j/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiZGVmZW5kZXJjaGFybGkiLCJhIjoiY2t0ZmYxbGl0MDdobTJwcW41c3FpejduMCJ9.g2Bpuitqhxwu2O6ot46ooA",
+                          "https://api.mapbox.com/styles/v1/defendercharli/cktffl7uu38j017p7cxqz769j/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiZGVmZW5kZXJjaGFybGkiLCJhIjoiY2t0ZmYxbGl0MDdobTJwcW41c3FpejduMCJ9.g2Bpuitqhxwu2O6ot46ooA",
                       additionalOptions: {
                         'accessToken':
-                        'pk.eyJ1IjoiZGVmZW5kZXJjaGFybGkiLCJhIjoiY2t0ZmYxbGl0MDdobTJwcW41c3FpejduMCJ9.g2Bpuitqhxwu2O6ot46ooA',
+                            'pk.eyJ1IjoiZGVmZW5kZXJjaGFybGkiLCJhIjoiY2t0ZmYxbGl0MDdobTJwcW41c3FpejduMCJ9.g2Bpuitqhxwu2O6ot46ooA',
                         'id': 'mapbox.mapbox-streets-v8'
                       }),
                   PolylineLayerOptions(polylines: [
@@ -87,8 +86,7 @@ class _MapSectionState extends State<MapSection> {
               child: IconButton(
                 icon: Icon(Icons.menu),
                 onPressed: () {
-                  setState(() =>_scafoldKey.currentState!.openDrawer());
-
+                  setState(() => _scafoldKey.currentState!.openDrawer());
                 },
               ),
             )

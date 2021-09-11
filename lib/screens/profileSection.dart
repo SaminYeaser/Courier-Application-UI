@@ -18,18 +18,20 @@ class ProfilePage extends StatelessWidget {
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [SizedBox(
-                  height: 30,
-                  child: IconButton(
-                    alignment: Alignment.topLeft,
-                    onPressed: () {Get.off(Home());},
-                    icon: Icon(
-                      Icons.arrow_back_ios_outlined,
-                      color: Colors.black,
+                children: [
+                  SizedBox(
+                    height: 30,
+                    child: IconButton(
+                      alignment: Alignment.topLeft,
+                      onPressed: () {
+                        Get.off(Home());
+                      },
+                      icon: Icon(
+                        Icons.arrow_back_ios_outlined,
+                        color: Colors.black,
+                      ),
                     ),
                   ),
-                ),
-
                   ProfileAvatar(),
                   Column(
                     children: [

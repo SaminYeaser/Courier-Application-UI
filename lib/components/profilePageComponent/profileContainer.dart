@@ -66,12 +66,27 @@ class ProfileContainer extends StatelessWidget {
             indent: 10,
             endIndent: 10,
           ),
-
-          ChartSection(title: 'Task Completed',text: '5 tasks completed',percentage: 50,),
-          SizedBox(height: 20,),
-          ChartSection(title: 'Delivery Completed',text: '3 delivery completed',percentage: 20,),
-          SizedBox(height: 20,),
-          ChartSection(title: 'Homework Completed',text: '10 tasks completed',percentage: 92,)
+          ChartSection(
+            title: 'Task Completed',
+            text: '5 tasks completed',
+            percentage: 50,
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          ChartSection(
+            title: 'Delivery Completed',
+            text: '3 delivery completed',
+            percentage: 20,
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          ChartSection(
+            title: 'Homework Completed',
+            text: '10 tasks completed',
+            percentage: 92,
+          )
         ],
       ),
     );

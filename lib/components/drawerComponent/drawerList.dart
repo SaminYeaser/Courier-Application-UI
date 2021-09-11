@@ -12,30 +12,41 @@ import 'menus.dart';
 List<Widget> allListi = [
   CustomMenuList(
     icon: IconButton(
-      icon: Icon(Icons.location_city),
-      color: Colors.white,
-      onPressed: () {Get.to(Home());}
-    ),
+        icon: Icon(Icons.location_city),
+        color: Colors.white,
+        onPressed: () {
+          Get.to(Home());
+        }),
     name: 'Home',
-    ontap: (){Get.to(Home());},
+    ontap: () {
+      Get.to(Home());
+    },
   ),
   CustomMenuList(
     icon: IconButton(
       icon: Icon(Icons.analytics),
-      onPressed: () {Get.to(MapSection());},
+      onPressed: () {
+        Get.to(MapSection());
+      },
       color: Colors.white,
     ),
     name: 'Map',
-    ontap: () {Get.to(MapSection());},
+    ontap: () {
+      Get.to(MapSection());
+    },
   ),
   CustomMenuList(
     icon: IconButton(
       icon: Icon(Icons.local_shipping),
-      onPressed: () {Get.to(ProfilePage());},
+      onPressed: () {
+        Get.to(ProfilePage());
+      },
       color: Colors.white,
     ),
     name: 'Shipping',
-    ontap: () {Get.to(ProfilePage());},
+    ontap: () {
+      Get.to(ProfilePage());
+    },
   ),
   // CustomMenuList(
   //   icon: IconButton(
@@ -56,11 +67,15 @@ List<Widget> allListi = [
   CustomMenuList(
     icon: IconButton(
       icon: Icon(Icons.notifications),
-      onPressed: () {Get.to(NotificationPage());},
+      onPressed: () {
+        Get.to(NotificationPage());
+      },
       color: Colors.white,
     ),
     name: 'Notification',
-    ontap: () {Get.to(NotificationPage());},
+    ontap: () {
+      Get.to(NotificationPage());
+    },
   ),
   // CustomMenuList(
   //   icon: IconButton(
