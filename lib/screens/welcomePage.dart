@@ -1,6 +1,7 @@
 import 'package:courierui/components/welcomePageComponents/loginCredential.dart';
 import 'package:courierui/components/welcomePageComponents/welcome.dart';
 import 'package:courierui/constants.dart';
+import 'package:get/get.dart';
 
 import 'package:flutter/material.dart';
 

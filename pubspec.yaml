@@ -32,6 +32,7 @@ dependencies:
   flutter_polyline_points: ^1.0.0
   flutter_map: ^0.13.1
   percent_indicator: ^3.0.1
+  get:
 
 
 dev_dependencies:

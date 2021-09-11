@@ -1,70 +1,89 @@
+import 'package:courierui/screens/home.dart';
+import 'package:courierui/screens/map.dart';
+import 'package:courierui/screens/notificationScreen.dart';
+import 'package:courierui/screens/profileSection.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get.dart';
 
 import 'menus.dart';
 
 List<Widget> allListi = [
   CustomMenuList(
-    icon: Icon(
-      Icons.my_location,
-      color: Colors.white54,
+    icon: IconButton(
+      icon: Icon(Icons.location_city),
+      color: Colors.white,
+      onPressed: () {Get.to(Home());}
     ),
     name: 'Home',
+    ontap: (){Get.to(Home());},
   ),
   CustomMenuList(
-    icon: Icon(
-      Icons.analytics,
+    icon: IconButton(
+      icon: Icon(Icons.analytics),
+      onPressed: () {Get.to(MapSection());},
       color: Colors.white,
     ),
-    name: 'Analytics',
+    name: 'Map',
+    ontap: () {Get.to(MapSection());},
   ),
   CustomMenuList(
-    icon: Icon(
-      Icons.local_shipping,
+    icon: IconButton(
+      icon: Icon(Icons.local_shipping),
+      onPressed: () {Get.to(ProfilePage());},
       color: Colors.white,
     ),
     name: 'Shipping',
+    ontap: () {Get.to(ProfilePage());},
   ),
+  // CustomMenuList(
+  //   icon: IconButton(
+  //     icon: Icon(Icons.account_balance_wallet_rounded),
+  //     onPressed: () {},
+  //     color: Colors.white,
+  //   ),
+  //   name: 'Courier',
+  // ),
+  // CustomMenuList(
+  //   icon: IconButton(
+  //     icon: Icon(Icons.card_membership_sharp),
+  //     onPressed: () {},
+  //     color: Colors.white,
+  //   ),
+  //   name: 'Shipping label',
+  // ),
   CustomMenuList(
-    icon: Icon(
-      Icons.account_balance_wallet_rounded,
-      color: Colors.white,
-    ),
-    name: 'Courier',
-  ),
-  CustomMenuList(
-    icon: Icon(
-      Icons.card_membership_sharp,
-      color: Colors.white,
-    ),
-    name: 'Shipping label',
-  ),
-  CustomMenuList(
-    icon: Icon(
-      Icons.notifications,
+    icon: IconButton(
+      icon: Icon(Icons.notifications),
+      onPressed: () {Get.to(NotificationPage());},
       color: Colors.white,
     ),
     name: 'Notification',
+    ontap: () {Get.to(NotificationPage());},
   ),
-  CustomMenuList(
-    icon: Icon(
-      Icons.bookmark,
-      color: Colors.white,
-    ),
-    name: 'Bookmark',
-  ),
-  CustomMenuList(
-    icon: Icon(
-      Icons.settings,
-      color: Colors.white,
-    ),
-    name: 'Setting',
-  ),
-  CustomMenuList(
-    icon: Icon(
-      Icons.help,
-      color: Colors.white,
-    ),
-    name: 'Help & Support',
-  ),
+  // CustomMenuList(
+  //   icon: IconButton(
+  //     icon: Icon(Icons.bookmark),
+  //     onPressed: () {},
+  //     color: Colors.white,
+  //   ),
+  //   name: 'Bookmark',
+  // ),
+  // CustomMenuList(
+  //   icon: IconButton(
+  //     icon: Icon(Icons.settings),
+  //     onPressed: () {},
+  //     color: Colors.white,
+  //   ),
+  //   name: 'Setting',
+  // ),
+  // CustomMenuList(
+  //   icon: IconButton(
+  //     icon: Icon(Icons.help),
+  //     onPressed: () {},
+  //     color: Colors.white,
+  //   ),
+  //   name: 'Help & Support',
+  // ),
 ];
