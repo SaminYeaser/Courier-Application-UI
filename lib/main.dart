@@ -2,6 +2,7 @@ import 'package:courierui/screens/drawer.dart';
 import 'package:courierui/screens/home.dart';
 import 'package:courierui/screens/map.dart';
 import 'package:courierui/screens/notificationScreen.dart';
+import 'package:courierui/screens/profileSection.dart';
 
 import 'package:flutter/material.dart';
 
@@ -21,7 +22,7 @@ class HomePage extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-        body: NotificationPage(),
+        body: ProfilePage(),
       ),
     );
   }
