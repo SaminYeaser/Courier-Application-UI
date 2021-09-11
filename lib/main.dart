@@ -1,18 +1,12 @@
 import 'package:courierui/screens/drawer.dart';
 import 'package:courierui/screens/home.dart';
+import 'package:courierui/screens/map.dart';
 
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Courier App',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: HomePage()
-    ),
+    HomePage()
   );
 }
 class HomePage extends StatelessWidget {
@@ -20,13 +14,13 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Stack(
-        children: [
-          CustomDrawer(),
-          Home(),
-        ],
-      ),
+    return MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Courier App',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: Scaffold(body: MapSection())
     );
   }
 }

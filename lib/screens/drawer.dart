@@ -57,10 +57,3 @@ class _CustomDrawerState extends State<CustomDrawer> {
     );
   }
 }
-// Container(
-// decoration: BoxDecoration(
-// gradient: LinearGradient(
-// colors: [Colors.blue.shade400, Colors.blue.shade800],
-// begin: Alignment.bottomCenter,
-// end: Alignment.topCenter)),
-// ),
