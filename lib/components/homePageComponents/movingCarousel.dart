@@ -68,3 +68,10 @@ class _CardSliderState extends State<CardSlider> {
 // });
 // }),
 // )
+// ListView.builder(
+// shrinkWrap: true,
+// scrollDirection: Axis.horizontal,
+// itemCount: listWidget.length,
+// itemBuilder: (context, index) => listWidget[index],
+// // padding: EdgeInsets.fromLTRB(0, 0, 50, 0),
+// )
