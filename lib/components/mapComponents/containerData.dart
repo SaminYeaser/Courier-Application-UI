@@ -5,13 +5,46 @@ class ContainerData extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    List<Widget> listtile = [
+      ListTile(
+        leading: Icon(Icons.settings),
+        title: Text('In Process to receiver'),
+        subtitle: Text('Poznan, Poland'),
+        trailing: Text('00:00 PM'),
+      ),
+      ListTile(
+        leading: Icon(Icons.settings),
+        title: Text('In Process to receiver'),
+        subtitle: Text('Dhaka, Bangladesh'),
+        trailing: Text('12:00 PM'),
+      ),
+      ListTile(
+        leading: Icon(Icons.settings),
+        title: Text('In Process to receiver'),
+        subtitle: Text('Dhaka, Bangladesh'),
+        trailing: Text('12:00 PM'),
+      ),
+      ListTile(
+        leading: Icon(Icons.settings),
+        title: Text('In Process to receiver'),
+        subtitle: Text('Dhaka, Bangladesh'),
+        trailing: Text('12:00 PM'),
+      ),
+      ListTile(
+        leading: Icon(Icons.settings),
+        title: Text('In Process to receiver'),
+        subtitle: Text('Dhaka, Bangladesh'),
+        trailing: Text('12:00 PM'),
+      ),
+    ];
+    double width = MediaQuery.of(context).size.width;
     return Column(
       children: [
         Divider(
           height: 15,
           thickness: 3,
-          indent: 180,
-          endIndent: 180,
+          indent: width * 5,
+          endIndent: width * 5,
           color: Colors.black,
         ),
         Padding(
@@ -47,17 +80,13 @@ class ContainerData extends StatelessWidget {
             ],
           ),
         ),
-        ListTile(
-          leading: Icon(Icons.settings),
-          title: Text('In Process to receiver'),
-          subtitle: Text('Poznan, Poland'),
-          trailing: Text('00:00 PM'),
-        ),
-        ListTile(
-          leading: Icon(Icons.settings),
-          title: Text('In Process to receiver'),
-          subtitle: Text('Dhaka, Bangladesh'),
-          trailing: Text('12:00 PM'),
+        Expanded(
+          child: ListView.builder(
+            itemBuilder: (context, index) => listtile[index],
+            itemCount: listtile.length,
+            shrinkWrap: true,
+            scrollDirection: Axis.vertical,
+          ),
         )
       ],
     );
